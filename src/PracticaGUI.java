@@ -69,7 +69,6 @@ public class PracticaGUI extends JPanel{
 				if (e.getSource().equals(bSearch)) {
 					BlastController bCont = new BlastController();
 					similarity = Float.parseFloat(tPercentage.getText());
-					taResult.setText("Search parameters: "+ type + " "+ cbSearch.getSelectedItem().toString()+" "+similarity);
 					if (similarity < 0 || similarity > 1) {
 						System.out.println("Similarity : introduce un numero entre 0.0 y 1.0");
 					}
